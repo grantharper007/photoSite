@@ -1,0 +1,18 @@
+/* Importing a Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+body {
+    background-color: #eee;
+}
+
+h1 {
+    font-family:'Raleway', sans-serif;
+    font-weight: 700;
+    /* H1 elements are bold by default so font weight is not necessary */
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 5px solid #ccc;
+    padding-bottom: 10px;
+}
