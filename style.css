@@ -15,4 +15,31 @@ h1 {
     text-align: center;
     border-bottom: 5px solid #ccc;
     padding-bottom: 10px;
+
+    /* Setting the width on the h1 so the bottom border will be displayed over the two middle images */
+    /* Width of two images: 22.5 x 2 = 45 */
+    /* Width of the space between the images: 3.33% */
+    /* 45% (images percentages) + 3.33 (gap percentages) = 48.33% */
+    width: 48.33%;
+
+    /* Setting "auto" for left and right margin centers teh h1 element horizontally inside the body element */
+    margin: 20px auto;
+}
+
+img {
+    /* Setting the width on the images to 100% so they will shrink down to only take up the spae assigned to them in the CSS Grid below. */
+    width: 100%;
+}
+
+#main {
+    display: grid;
+    
+    /* 22.5 x 4 = 90% */
+    grid-template-columns: repeat(4, 22.5%);
+    /* 3.33 x 3 = 10 */
+    column-gap: 3.33%;
+
+    /* Setting the row-gap to twice the percentage amount of the column-gap because the height of the Grid container (AKA The Div Element) is about half of the width */
+    row-gap: 6.66%;
+
 }
